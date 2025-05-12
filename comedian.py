@@ -22,12 +22,6 @@ def main(page: ft.Page):
         page.update()
         page.open(Jokebs)
 
-    def start(e):
-        for startrow in page.controls:
-            page.controls.remove(startrow)
-            page.controls.append(jokeButtom)
-        page.update()
-
     title = ft.Text("Stand Up Comedian", size=22, weight="bold", color="white")
     jokeText = ft.Text("")
 
